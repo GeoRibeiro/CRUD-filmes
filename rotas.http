@@ -1,0 +1,28 @@
+GET http://localhost:3019/todos-filmes
+
+###
+
+POST http://localhost:3019/adicionar-filme
+Content-Type: application/json
+
+{
+    "nome_filme": "Moulin Rouge teste",
+    "genero": "Musical/Romance",
+    "duracao_min": "120",
+    "classificacao_indicativa": "12"
+}
+
+###
+
+DELETE http://localhost:3019/apagar-filme/18
+###
+
+PUT http://localhost:3019/atualizar-filme/18
+Content-Type: application/json
+
+{
+  "nome_filme": "Moulin Rouge",
+  "genero": "Musical/Romance",
+  "duracao_min": "140",
+  "classificacao_indicativa": "12"
+}
