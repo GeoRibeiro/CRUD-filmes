@@ -1,11 +1,13 @@
 import express from "express"
 import mysql2 from "mysql2"
+import cors from "cors"
 
 const app = express()
 
 app.use(express.json())
+app.use(cors())
 
-app.get("/todos-filmes", (request, response) => {
+app.get("/", (request, response) => {
     const selectCommand = "SELECT * FROM filmes_GeovannaRibeiro"
 
     sql.query(selectCommand, (error, data) => {
