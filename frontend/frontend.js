@@ -1,5 +1,5 @@
 async function buscarFilmes() {
-    const resposta = await fetch("http://localhost:3019/")
+    const resposta = await fetch("https://crud-filmes-five.vercel.app/")
     const filmes = await resposta.json()
     const sectionFilmes = document.querySelector(".filmes")
 
